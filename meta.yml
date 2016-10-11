@@ -5,3 +5,5 @@ elems:
     dst:  /etc/wpa_supplicant/wpa_supplicant-<%= interface %>.conf
     only: f?wpa_supplicant
 <% end %>
+
+# vim: set filetype=eruby.yaml :
