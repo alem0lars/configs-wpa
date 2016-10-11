@@ -7,3 +7,5 @@ network={
   ssid="<%= local! :ssid %>"
   psk="<%= `wpa_passphrase #{local!(:ssid).shell_escape} #{local!(:pwd)}` %>"
 }
+
+# vim: set filetype=eruby :
