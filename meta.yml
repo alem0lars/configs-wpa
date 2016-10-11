@@ -1,9 +1,7 @@
 elems:
 
-<% get_var!(:"wireless.interfaces").each do |interface| %>
   - src:  wpa_supplicant\.conf$
-    dst:  /etc/wpa_supplicant/wpa_supplicant-<%= interface %>.conf
+    dst:  /etc/wpa_supplicant/wpa_supplicant-<%= get_var!(:"wireless.interface") %>.conf
     only: f?wpa_supplicant
-<% end %>
 
 # vim: set filetype=eruby.yaml :
