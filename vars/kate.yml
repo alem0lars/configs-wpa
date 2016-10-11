@@ -1,1 +1,7 @@
 # => inherits: generic <= #
+
+wireless:
+  interface: wlp3s0
+  networks:
+    - ssid: brainstorm
+      pwd:  <{ lpass 4334493847588119334 }>
